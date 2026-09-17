@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#09040a">
+  <title>Hey Beautiful 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app" aria-live="polite">
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+
+    <section class="screen active" id="welcome">
+      <div class="orb heart-orb"><span>♥</span></div>
+      <p class="eyebrow">A tiny surprise for you</p>
+      <h1>Hey Beautiful</h1>
+      <p class="subtitle">Do you even know how cute you are?</p>
+      <button class="primary" data-next="meter">Open My Heart <span>♥</span></button>
+    </section>
+
+    <section class="screen" id="meter">
+      <div class="card meter-card">
+        <p class="small-title">Measuring your cuteness...</p>
+        <strong id="percent">0%</strong>
+        <div class="meter"><span id="meterFill"></span></div>
+        <p class="warning">⚠ WARNING: TOO CUTE TO HANDLE</p>
+      </div>
+    </section>
+
+    <section class="screen" id="quiz">
+      <div class="orb heart-orb small"><span>♥</span></div>
+      <h2>Just for you</h2>
+      <p class="subtitle">Tap each one to reveal</p>
+      <div class="choices">
+        <button class="choice">You look adorable <span>♡</span></button>
+        <button class="choice">Your smile is dangerous <span>♡</span></button>
+        <button class="choice">You make things feel lighter <span>♡</span></button>
+        <button class="choice">You're naturally charming <span>♡</span></button>
+      </div>
+      <button class="primary next" data-next="note">See more →</button>
+    </section>
+
+    <section class="screen" id="note">
+      <h2 class="script">A little note for you</h2>
+      <article class="note">
+        <div class="note-heart">♥</div>
+        <p>I just wanted to tell you something... you really are special in a way that's hard to explain.</p>
+        <p>There's a softness in the way you talk, a sweetness in the way you smile, and something genuine about you that just feels too good to be around.</p>
+        <p>You don't try to be anything extra, you're just you, and I</p>
+      </article>
+      <button class="primary" data-next="ending">Continue ♥</button>
+    </section>
+
+    <section class="screen" id="ending">
+      <div class="orb character-orb">
+        <div class="character">☁</div>
+        <i></i><i></i><i></i>
+      </div>
+      <h2 class="script">You'll always be special to me</h2>
+      <p class="subtitle">Keep smiling, beautiful.</p>
+      <button class="ghost" id="restart">Replay from the beginning</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
